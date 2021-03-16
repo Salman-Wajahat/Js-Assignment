@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <script>
+        var ni = prompt("Input string: ");
+
+
+        var splitStr = ni.toLowerCase().split(' ');
+        for (var i = 0; i < splitStr.length; i++) {
+
+            splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
+        }
+
+        var nii = splitStr.join(' ');
+
+
+
+        document.write(nii);
+    </script>
+
+</body>
+
+</html>

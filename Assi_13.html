@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <script>
+        var c1 = prompt("course 1 marks: ");
+        var c2 = prompt("course 2 marks: ");
+        var c3 = prompt("course 3 marks: ");
+        var c4 = prompt("course 4 marks: ");
+        var c5 = prompt("course 5 marks: ");
+
+        var c11 = parseInt(c1);
+        var c22 = parseInt(c2);
+        var c33 = parseInt(c3);
+        var c44 = parseInt(c4);
+        var c55 = parseInt(c5);
+
+        var tm = 500;
+
+        var pert = (c11 + c22 + c33 + c44 + c55) * 100 / tm;
+
+        document.write("Percentage is:  " + pert);
+
+        switch (pert) {
+            case (pert <= 100 && pert >= 90):
+                console.log("Grade is A+");
+                break;
+
+            case (pert <= 89 && pert >= 75):
+                console.log("Grade is A");
+                break;
+
+            case (pert <= 74 && pert >= 60):
+                console.log("Grade is B");
+                break;
+
+
+            case (pert <= 59 && pert >= 45):
+                console.log("Grade is C");
+                break;
+
+            case (pert <= 44 && pert >= 30):
+                console.log("Grade is D");
+                break;
+
+            case (pert <= 29 && pert >= 0):
+                console.log("Grade is F");
+                break;
+
+            default:
+                console.log("Retake Exam");
+        }
+    </script>
+
+</body>
+
+</html>

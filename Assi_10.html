@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <script>
+        var ni = prompt("Input your Name: ");
+
+
+        var di = prompt("Input your DOB(date): ");
+        var dii = parseInt(di);
+        var mi = prompt("Input your DOB(month): ");
+        var mii = parseInt(mi);
+        var yi = prompt("Input your DOB(year): ");
+        var yii = parseInt(yi);
+
+        var dob = new Date(yii, mii, dii, 10, 10, 10);
+        var d = new Date();
+        var dd = d - dob;
+
+        document.write("Hello " + ni + " , Good Day..!");
+
+        document.write("Your DOB Is " + dob);
+
+        document.write("mins" + dd.getMinutes());
+    </script>
+
+</body>
+
+</html>
